@@ -40,7 +40,7 @@ def join_csv(uploaded_first_file, uploaded_second_file):
     return Response(
         output1.to_csv(),
         mimetype="text/csv",
-        headers={"Content-disposition": "attachment; filename=filename.csv"},
+        headers={"Content-disposition": "attachment; filename=joined.csv"},
     )
 
 
