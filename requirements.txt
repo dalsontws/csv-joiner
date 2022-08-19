@@ -70,6 +70,7 @@ filelock==3.0.12
 flake8==3.8.3
 Flask==1.1.2
 Flask-BasicAuth==0.2.0
+Frozen-Flask==0.18
 fsspec==0.7.4
 future==0.16.0
 gevent==20.9.0
