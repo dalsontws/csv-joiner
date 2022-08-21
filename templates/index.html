@@ -8,6 +8,10 @@
     <form method="POST" action="" enctype="multipart/form-data">
       <p><input type="file" name="first_csv" accept=".csv" /></p>
       <p><input type="file" name="second_csv" accept=".csv" /></p>
+      <p>
+        <label>Column to join on</label>
+        <input type="text" name="column_to_join" />
+      </p>
       <p><input type="submit" value="Submit" /></p>
     </form>
   </body>
