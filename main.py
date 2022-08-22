@@ -42,7 +42,7 @@ def join_csv(uploaded_first_file, uploaded_second_file, column_to_join):
     output1 = pd.merge(data1, data2, on=column_to_join, how="outer")
 
     return Response(
-        output1.to_csv(),
+        output1.to_csv(index=False),
         mimetype="text/csv",
         headers={"Content-disposition": "attachment; filename=joined.csv"},
     )
